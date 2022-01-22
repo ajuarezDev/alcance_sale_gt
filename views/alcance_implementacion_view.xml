@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    
+     <record id="alcance_sale_gt_view_alcance_implementacion" model="ir.ui.view">
+        <field name="name">alcance.gt.mantenimiento.alcance.form</field>
+        <field name="model">alcance.gt.mantenimiento.alcance</field>
+        <field name="arch" type="xml">
+            <form string="Alcance">
+                <sheet>
+                    <div class="o_group">
+                        <div class="o_group o_inner_group o_group_col_6">
+                            <group>
+                                <!-- <field invisible="1" name="embarque_id" /> -->
+                                <field name="alcance"/>
+                            </group>
+                        </div>
+                    </div>
+                    <div class="o_group">
+                        <div class="o_group o_inner_group o_group_col_6">
+                            <group>
+                                <field name="activo" />
+                            </group>
+                        </div>
+                    </div>
+                    <div class="o_group">
+                        <div class="o_group o_inner_group o_group_col_12">
+                            <group>
+                                <field name="descricpion" />
+                            </group>
+                        </div>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <record id="alcance_implementacion_1" model="ir.actions.act_window">
+        <field name="name">Puertos Maritimos y Aereos</field>
+        <field name="res_model">alcance.gt.mantenimiento.alcance</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <menuitem 
+        name="Proyectos" 
+        id="sub_proyecto" 
+        parent="sale.product_menu_catalog"/> 
+
+    <menuitem name="Alcances de implementacion" sequence="1" id="alcance_1" parent="sub_proyecto" action="alcance_implementacion_1"/>
+</odoo>
