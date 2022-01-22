@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="alcance_gt_child_plantilla_alcance_tre" model="ir.ui.view">
+        <field name="name">alcance.gt.child.plantilla.alcance.tree</field>
+        <field name="model">alcance.gt.child.plantilla.alcance</field>
+        <field name="arch" type="xml">
+            <tree string="Alcance" editable="bottom">
+                <field name="alcance_id" />
+                <field name="descricpion" />
+                <field name="tiempo" />
+                <field name="udm" />
+            </tree>
+        </field>
+    </record> 
+
+
+     <record id="alcance_sale_gt_view_alcance_plantilla" model="ir.ui.view">
+        <field name="name">alcance.gt.plantilla.alcance.form</field>
+        <field name="model">alcance.gt.plantilla.alcance</field>
+        <field name="arch" type="xml">
+            <form string="Planitlla">
+                <sheet>
+                    <div class="o_group">
+
+                        <div class="o_group o_inner_group o_group_col_6">
+                            <group>
+                                <field name="plantilla_alcances" />
+                            </group>
+                        </div>
+                    </div>
+                    <div class="o_group">
+                        <div class="o_group o_inner_group o_group_col_6">
+                            <group>
+                                <field name="activo" />
+                            </group>
+                        </div>
+                        <div class="o_group o_inner_group o_group_col_6">
+                            <group>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company" />
+                            </group>
+                        </div>
+                    </div>
+                    <div class="o_group">
+                        <div class="o_group o_inner_group o_group_col_12">
+                            <group>
+                                <field name="descricpion" />
+                            </group>
+                        </div>
+                    </div>
+                    <notebook>
+                        <page string="Alcance" autofocus="autofocus">
+                            <field name="child_alcance" ></field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
