@@ -9,7 +9,7 @@ class Alcance(models.Model):
 
     alcance = fields.Char("Alcance", required=True)
     activo = fields.Boolean("Activo", default=True)
-    company_id =  fields.Many2one('res.company', string='Compañia', default=lambda self: self.env.company)
+    company_id =  fields.Many2one('res.company', string='Compañia', default=lambda self: self.env.company, required=True,)
     descricpion =  fields.Html(string='Descripcion')
 
     
