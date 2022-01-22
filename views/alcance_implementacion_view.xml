@@ -10,7 +10,7 @@
                     <div class="o_group">
                         <div class="o_group o_inner_group o_group_col_6">
                             <group>
-                                <!-- <field invisible="1" name="embarque_id" /> -->
+                                <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company" />
                                 <field name="alcance"/>
                             </group>
                         </div>
@@ -19,7 +19,6 @@
                         <div class="o_group o_inner_group o_group_col_6">
                             <group>
                                 <field name="activo" />
-                                <field name="multi_company" />
                             </group>
                         </div>
                     </div>
