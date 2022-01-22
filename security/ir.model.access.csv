@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 1,alcance.gt.mantenimiento.alcance,model_alcance_gt_mantenimiento_alcance,base.group_user,1,1,1,1
+2,alcance.gt.plantilla.alcance,model_alcance_gt_plantilla_alcance,base.group_user,1,1,1,1
+3,alcance.gt.child.plantilla.alcance,model_alcance_gt_child_plantilla_alcance,base.group_user,1,1,1,1
