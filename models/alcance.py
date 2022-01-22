@@ -11,6 +11,7 @@ class Alcance(models.Model):
     activo = fields.Boolean("Activo", default=True)
     company_id =  fields.Many2one('res.company', string='Compañia', default=lambda self: self.env.company)
     descricpion =  fields.Html(string='Descripcion')
+    multi_company = self.env['res.config.settings'].sudo().search([])
 
     
 

@@ -19,6 +19,7 @@
                         <div class="o_group o_inner_group o_group_col_6">
                             <group>
                                 <field name="activo" />
+                                <field name="multi_company" />
                             </group>
                         </div>
                     </div>
