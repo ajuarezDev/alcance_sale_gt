@@ -6,6 +6,11 @@
         <field name="model">alcance.gt.child.plantilla.alcance</field>
         <field name="arch" type="xml">
             <tree string="Alcance" editable="bottom">
+                <!-- <control>
+                    <create name="add_product_control" string="Add a product"/>
+                    <create name="add_section_control" string="Add a section" context="{'default_display_type': 'line_section'}"/>
+                    <create name="add_note_control" string="Add a note" context="{'default_display_type': 'line_note'}"/>
+                </control> -->
                 <field name="alcance_id" />
                 <field name="descricpion" />
                 <field name="tiempo" />

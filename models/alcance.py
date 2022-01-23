@@ -38,4 +38,7 @@ class ChildPlantillaAlcance(models.Model):
     descricpion =  fields.Html(string='Descripcion', required=True)
     tiempo = fields.Float("Tiempo")
     udm =  fields.Many2one('uom.uom', string='UdM',)
+    display_type = fields.Selection([
+        ('line_section', "Section"),
+        ('line_note', "Note")], default=False)
 
