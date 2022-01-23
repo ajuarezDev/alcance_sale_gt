@@ -20,6 +20,7 @@
         'views/alcance_implementacion_view.xml',
         'views/plantilla_alcance_view.xml',
         'views/sale_view.xml',
+        'views/sale_pdf.xml',
         'views/menu_view.xml',
     ],
 }

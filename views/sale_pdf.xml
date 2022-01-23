@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    
+    <template id="report_saleorder_document_inherit" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//div[@name='so_total_summary']" position="after">
+            <table class="table table-sm o_main_table">
+                <thead style="display: table-row-group">
+                    <tr>
+                        <th name="th_alcance" class="text-left">Alcance</th>
+                        <th name="th_descripcion" class="text-left">Descripcion</th>
+                        <th name="th_tiempo" class="text-left">Tiempo</th>
+                        <th name="th_udm" class="text-left">UdM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-foreach="doc.template_ids" t-as="line_template">
+                        <tr>
+                            <td class="text-left">
+                                <span t-field="line_template.alcance_id.alcance"/>
+                            </td>
+                            <td class="text-left">
+                                <span t-field="line_template.descricpion"/>
+                            </td>
+                            <td class="text-left">
+                                <span t-field="line_template.tiempo"/>
+                            </td>
+                            <td class="text-left">
+                                <span t-field="line_template.udm.name"/>
+                            </td>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+        </xpath>
+    </template>
+</odoo>
