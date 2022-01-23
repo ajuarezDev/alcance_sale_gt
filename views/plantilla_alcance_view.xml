@@ -20,7 +20,7 @@
     </record> 
 
 
-     <record id="alcance_sale_gt_view_alcance_plantilla" model="ir.ui.view">
+    <record id="alcance_sale_gt_view_alcance_plantilla" model="ir.ui.view">
         <field name="name">alcance.gt.plantilla.alcance.form</field>
         <field name="model">alcance.gt.plantilla.alcance</field>
         <field name="arch" type="xml">
