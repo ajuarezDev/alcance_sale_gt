@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <record id="view_alcance_gt_sale_alcance_tree" model="ir.ui.view">
+        <field name="name">alcance.gt.sale.alcance.tree</field>
+        <field name="model">alcance.gt.sale.alcance</field>
+        <field name="arch" type="xml">
+            <tree string="Alcance" editable="bottom">
+                <!-- <control>
+                    <create name="add_product_control" string="Add a product"/>
+                    <create name="add_section_control" string="Add a section" context="{'default_display_type': 'line_section'}"/>
+                    <create name="add_note_control" string="Add a note" context="{'default_display_type': 'line_note'}"/>
+                </control> -->
+                <field name="alcance_id" />
+                <field name="descricpion" />
+                <field name="tiempo" />
+                <field name="udm" />
+            </tree>
+        </field>
+    </record> 
+
+    <record id="naos_gt_view_order_form_inherit" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <field name="payment_term_id" position="after">
+                <field name="alcance_id"/>
+            </field>
+            <xpath expr="//page[@name='customer_signature']" position="after">
+                <page name="detalle_alcance" string="Detalle de Alcances">
+                    <field name="template_ids" />
+                </page>                
+            </xpath>
+           
+        </field>
+    </record>
+</odoo>
